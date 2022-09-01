@@ -234,12 +234,14 @@ i {
   border: none;
   position: relative;
 }
+
 .item img {
   border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .item .bottom {
   position: absolute;
   bottom: 10%;
@@ -252,9 +254,11 @@ i {
   margin: 0 auto;
   padding: 5px 10px;
 }
+
 .item .bottom p {
   margin: 5px 0 !important;
 }
+
 .item .bottom .icon {
   border-radius: 50%;
   background-color: var(--mainColor);
@@ -279,22 +283,24 @@ i {
   min-height: 700px;
   padding-top: 20px;
 }
+
 #testimonial .info {
   margin-top: 50px;
   position: relative;
 }
+
 #testimonial h1 {
   font-weight: 200;
   margin-bottom: 40px;
 }
-#testimonial .quotation {
-}
+
 #testimonial p {
   font-weight: 600;
   font-size: 30px;
   line-height: 1.8;
   width: 80%;
 }
+
 #testimonial .info::after {
   content: "،،";
   font-size: 200px;
@@ -335,25 +341,30 @@ i {
   padding: 30px 0;
   /* margin: 20px 0; */
 }
+
 #project .container h1,
 #project .container p {
   margin: 30px 0;
 }
+
 #project .container p {
   color: #909090;
   letter-spacing: 2px;
 }
+
 #project .background {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 #project img {
   object-fit: cover;
   width: 85%;
   height: 100%;
   text-align: center;
 }
+
 @media (max-width: 1200px) {
   #project img {
     width: 100%;
@@ -425,6 +436,7 @@ i {
 #feature .authour {
   margin: 50px 0;
 }
+
 #feature .authour h2 {
   font-size: 20px;
   font-weight: 600;
