@@ -1,3 +1,42 @@
+/* global rules */
+body {
+  overflow-x: hidden;
+}
+.rightSide {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  padding: 90px 20px;
+}
+
+.leftSide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  border-top: 930px solid transparent;
+  border-right: 200px solid rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info i {
+  font-size: 50px;
+}
+
+.info p {
+  padding-left: 20px;
+}
+
 /* header start */
 header {
   position: fixed;
@@ -11,6 +50,11 @@ header {
 header .navbar {
   padding-right: 20%;
   padding-left: 40px;
+  font-size: 25px;
+}
+
+header .navbar a:hover {
+  color: rgb(131, 161, 87);
 }
 
 header .navbar .navbar-brand {
