@@ -1,0 +1,60 @@
+/* global rules */
+:root {
+  --secondaryColor: #14b789;
+  --thirdColor: #535da1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav bar  */
+header {
+  position: fixed;
+  top: 15px;
+  width: 100vw;
+}
+header nav .leftSide .logo {
+  margin-right: 50px;
+}
+
+header nav .leftSide .links ul {
+  display: flex;
+  align-items: center;
+}
+
+header nav .leftSide .links ul li {
+  margin-right: 20px;
+  margin-left: 20px;
+  transition: all 0.3s ease;
+  padding-bottom: 10px;
+}
+
+header nav .leftSide .links ul li.active,
+header nav .leftSide .links ul li:hover {
+  border-bottom: 1px solid var(--secondaryColor);
+}
+
+header nav .leftSide .links ul li a {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+header nav .leftSide .links ul li.active a,
+header nav .leftSide .links ul li:hover a {
+  color: var(--secondaryColor);
+}
+
+/* hero section */
+#home {
+  background-image: url("../images/home-background.jpg");
+  background-size: cover;
+  min-height: 600px;
+}
