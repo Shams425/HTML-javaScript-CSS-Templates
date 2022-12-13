@@ -21,6 +21,48 @@ header {
   top: 15px;
   width: 100vw;
 }
+
+header nav {
+  min-height: 60px;
+  position: relative;
+}
+
+header .toggleMenu {
+  display: none;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+header .toggleMenu .bar {
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+header .toggleMenu .bar::before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+header .toggleMenu .bar::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
 header nav .leftSide .logo {
   margin-right: 50px;
 }
@@ -34,22 +76,78 @@ header nav .leftSide .links ul li {
   margin-right: 20px;
   margin-left: 20px;
   transition: all 0.3s ease;
-  padding-bottom: 10px;
-}
-
-header nav .leftSide .links ul li.active,
-header nav .leftSide .links ul li:hover {
-  border-bottom: 1px solid var(--secondaryColor);
+  padding-bottom: 12px;
 }
 
 header nav .leftSide .links ul li a {
   color: white;
   transition: all 0.3s ease;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 10px;
 }
 
 header nav .leftSide .links ul li.active a,
 header nav .leftSide .links ul li:hover a {
-  color: var(--secondaryColor);
+  color: var(--secondaryColor) !important;
+  border-bottom: 1px solid var(--secondaryColor);
+}
+
+header .rightSide .icon {
+  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+header .rightSide .phoneNum {
+  padding: 10px;
+  border: 1px solid white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+header .rightSide .phoneNum:hover {
+  background-color: white;
+}
+
+/* header responsive */
+@media screen and (max-width: 990px) {
+  header .toggleMenu {
+    display: block;
+  }
+
+  header .links {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 100%;
+    background-color: white;
+    color: black;
+  }
+
+  header .links ul {
+    display: block !important;
+  }
+
+  header .links ul li {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 10px;
+  }
+
+  header .links ul li a {
+    color: #717275 !important;
+  }
 }
 
 /* hero section */

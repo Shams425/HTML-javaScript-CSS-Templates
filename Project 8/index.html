@@ -17,11 +17,15 @@
   <body>
     <!-- nav bar -->
     <header>
-      <div class="container p-3">
+      <!-- <div class="container p-3">
         <nav class="d-flex justify-content-between align-items-center">
+          
+          <div class="toggleMenu">
+            <span class="bar"></span>
+          </div>
           <div class="leftSide d-flex align-items-center">
             <div class="logo">
-              <h1>First</h1>
+              <h1 style="color: white">First</h1>
             </div>
             <div class="links">
               <ul>
@@ -34,7 +38,7 @@
             </div>
           </div>
 
-          <div class="rigthSide">
+          <div class="rightSide">
             <div class="contact d-flex align-items-center">
               <div class="icon">
                 <i class="fas fa-phone"></i>
@@ -47,7 +51,54 @@
             </div>
           </div>
         </nav>
-      </div>
+      </div> -->
+
+      <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <div class="container">
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="navbar-toggler-icon"></i>
+          </button>
+          <a class="navbar-brand" href="#">First</a>
+
+          <div class="contact d-flex align-items-center">
+            <div class="icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="phoneNum">
+              <a href="+120-12099-999-99" type="telephone">+120-12099-999-99</a>
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page"
+                  >Home <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- hero section -->
