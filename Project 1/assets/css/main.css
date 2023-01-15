@@ -267,6 +267,7 @@ i {
   justify-content: center;
   padding-top: 4px;
   width: 40px;
+  word-break: normal;
   height: 40px;
 }
 
